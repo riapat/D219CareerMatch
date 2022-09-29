@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A3D243ACD5AB360D70F40AF /* Pods_NWCareerMatch_swiftuiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDA1B6D96DFD378A09686A7 /* Pods_NWCareerMatch_swiftuiTests.framework */; };
+		380006543DE114703EB203CD /* Pods_NWCareerMatch_swiftui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7D5ED932DAA91734E35690 /* Pods_NWCareerMatch_swiftui.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		CF7F948A5451400C6E514C56 /* Pods_NWCareerMatch_swiftui_NWCareerMatch_swiftuiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8490FC0D512942F9D43E11 /* Pods_NWCareerMatch_swiftui_NWCareerMatch_swiftuiUITests.framework */; };
+		E824288727E590A1004D5983 /* VolunteerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E824288627E590A1004D5983 /* VolunteerDetail.swift */; };
+		E83F8B98274432950000B48F /* client_812979920679-evmmepcsjp2jf8ml9991j6rl2kbke1qr.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = E83F8B97274432950000B48F /* client_812979920679-evmmepcsjp2jf8ml9991j6rl2kbke1qr.apps.googleusercontent.com.plist */; };
+		E844636727DD9B6900C83DA0 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E844636627DD9B6900C83DA0 /* Volunteer.swift */; };
+		E844636927DD9CA200C83DA0 /* VolunteerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E844636827DD9CA200C83DA0 /* VolunteerData.swift */; };
+		E85B44AD274369B1006DA0F7 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = E85B44AC274369B1006DA0F7 /* SwiftCSV */; };
+		E86B9707288BB5800046BBCA /* SupportMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B9706288BB5800046BBCA /* SupportMail.swift */; };
+		E86B970E288D152C0046BBCA /* KeyboardGuardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86B970D288D152C0046BBCA /* KeyboardGuardian.swift */; };
+		E882B438280BCE400055B316 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E882B437280BCE400055B316 /* LaunchView.swift */; };
+		E88573AA27EE59F4009D497D /* VolTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88573A927EE59F4009D497D /* VolTableView.swift */; };
+		E88573AC27EE5B29009D497D /* VolunteerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88573AB27EE5B29009D497D /* VolunteerViewCell.swift */; };
+		E89DF43B27A76C480035CB90 /* JobDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89DF43A27A76C480035CB90 /* JobDetail.swift */; };
+		E89DF43D27A781F60035CB90 /* JobBoardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89DF43C27A781F60035CB90 /* JobBoardRow.swift */; };
+		E8A607CC27E9237B006A00F6 /* FilterVol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A607CB27E9237B006A00F6 /* FilterVol.swift */; };
+		E8B8261D281C7B10001D8A93 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8261C281C7B10001D8A93 /* InfoView.swift */; };
+		E8C72A1627431327008B4914 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C72A1527431327008B4914 /* ModelData.swift */; };
+		E8DF0C4027E03FC20059174A /* VolunteerBoardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF0C3F27E03FC20059174A /* VolunteerBoardRow.swift */; };
+		E8FB352F273F0E7F00E12EA8 /* NWCareerMatch_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB352E273F0E7F00E12EA8 /* NWCareerMatch_swiftuiApp.swift */; };
+		E8FB3531273F0E7F00E12EA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB3530273F0E7F00E12EA8 /* ContentView.swift */; };
+		E8FB3533273F0E8000E12EA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FB3532273F0E8000E12EA8 /* Assets.xcassets */; };
+		E8FB3536273F0E8000E12EA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FB3535273F0E8000E12EA8 /* Preview Assets.xcassets */; };
+		E8FB3540273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB353F273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests.swift */; };
+		E8FB354A273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB3549273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests.swift */; };
+		E8FB354C273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB354B273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITestsLaunchTests.swift */; };
+		E8FB3559273F0F0E00E12EA8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB3558273F0F0E00E12EA8 /* TableViewCell.swift */; };
+		E8FB355B27402AA800E12EA8 /* Career.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB355A27402AA800E12EA8 /* Career.swift */; };
+		E8FB355D27402BF500E12EA8 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB355C27402BF500E12EA8 /* TableView.swift */; };
+		E8FB355F27402D0E00E12EA8 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FB355E27402D0E00E12EA8 /* Filter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8FB353C273F0E8000E12EA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8FB3523273F0E7F00E12EA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8FB352A273F0E7F00E12EA8;
+			remoteInfo = NWCareerMatch_swiftui;
+		};
+		E8FB3546273F0E8000E12EA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8FB3523273F0E7F00E12EA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8FB352A273F0E7F00E12EA8;
+			remoteInfo = NWCareerMatch_swiftui;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F7D5ED932DAA91734E35690 /* Pods_NWCareerMatch_swiftui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWCareerMatch_swiftui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1634B97CA5DD3CE60A5D5F06 /* Pods-NWCareerMatch_swiftui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWCareerMatch_swiftui.release.xcconfig"; path = "Target Support Files/Pods-NWCareerMatch_swiftui/Pods-NWCareerMatch_swiftui.release.xcconfig"; sourceTree = "<group>"; };
+		28DB51C4678498F96103BD1D /* Pods-NWCareerMatch_swiftui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWCareerMatch_swiftui.debug.xcconfig"; path = "Target Support Files/Pods-NWCareerMatch_swiftui/Pods-NWCareerMatch_swiftui.debug.xcconfig"; sourceTree = "<group>"; };
+		65F1C38DE4D503B45C4D27CD /* Pods-NWCareerMatch_swiftuiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWCareerMatch_swiftuiTests.debug.xcconfig"; path = "Target Support Files/Pods-NWCareerMatch_swiftuiTests/Pods-NWCareerMatch_swiftuiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C3C16C97DC36A3C9233C355 /* Pods-NWCareerMatch_swiftuiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWCareerMatch_swiftuiTests.release.xcconfig"; path = "Target Support Files/Pods-NWCareerMatch_swiftuiTests/Pods-NWCareerMatch_swiftuiTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D8490FC0D512942F9D43E11 /* Pods_NWCareerMatch_swiftui_NWCareerMatch_swiftuiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWCareerMatch_swiftui_NWCareerMatch_swiftuiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CB1D55BE64C73474E33E32 /* Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests.release.xcconfig"; path = "Target Support Files/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A88937B44B8A2AFC0BEB9B4D /* Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests.debug.xcconfig"; path = "Target Support Files/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDDA1B6D96DFD378A09686A7 /* Pods_NWCareerMatch_swiftuiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NWCareerMatch_swiftuiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E824288627E590A1004D5983 /* VolunteerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerDetail.swift; sourceTree = "<group>"; };
+		E83F8B97274432950000B48F /* client_812979920679-evmmepcsjp2jf8ml9991j6rl2kbke1qr.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_812979920679-evmmepcsjp2jf8ml9991j6rl2kbke1qr.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		E844636627DD9B6900C83DA0 /* Volunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
+		E844636827DD9CA200C83DA0 /* VolunteerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerData.swift; sourceTree = "<group>"; };
+		E86B9706288BB5800046BBCA /* SupportMail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportMail.swift; sourceTree = "<group>"; };
+		E86B970D288D152C0046BBCA /* KeyboardGuardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardGuardian.swift; sourceTree = "<group>"; };
+		E882B437280BCE400055B316 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		E88573A927EE59F4009D497D /* VolTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolTableView.swift; sourceTree = "<group>"; };
+		E88573AB27EE5B29009D497D /* VolunteerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerViewCell.swift; sourceTree = "<group>"; };
+		E89DF43A27A76C480035CB90 /* JobDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetail.swift; sourceTree = "<group>"; };
+		E89DF43C27A781F60035CB90 /* JobBoardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobBoardRow.swift; sourceTree = "<group>"; };
+		E8A607CB27E9237B006A00F6 /* FilterVol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVol.swift; sourceTree = "<group>"; };
+		E8B8261C281C7B10001D8A93 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		E8C72A1527431327008B4914 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		E8DF0C3F27E03FC20059174A /* VolunteerBoardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerBoardRow.swift; sourceTree = "<group>"; };
+		E8FB352B273F0E7F00E12EA8 /* NWCareerMatch_swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NWCareerMatch_swiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8FB352E273F0E7F00E12EA8 /* NWCareerMatch_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWCareerMatch_swiftuiApp.swift; sourceTree = "<group>"; };
+		E8FB3530273F0E7F00E12EA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E8FB3532273F0E8000E12EA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8FB3535273F0E8000E12EA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8FB353B273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NWCareerMatch_swiftuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8FB353F273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWCareerMatch_swiftuiTests.swift; sourceTree = "<group>"; };
+		E8FB3545273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NWCareerMatch_swiftuiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8FB3549273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWCareerMatch_swiftuiUITests.swift; sourceTree = "<group>"; };
+		E8FB354B273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWCareerMatch_swiftuiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8FB3558273F0F0E00E12EA8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E8FB355A27402AA800E12EA8 /* Career.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Career.swift; sourceTree = "<group>"; };
+		E8FB355C27402BF500E12EA8 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		E8FB355E27402D0E00E12EA8 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8FB3528273F0E7F00E12EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85B44AD274369B1006DA0F7 /* SwiftCSV in Frameworks */,
+				380006543DE114703EB203CD /* Pods_NWCareerMatch_swiftui.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FB3538273F0E8000E12EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3D243ACD5AB360D70F40AF /* Pods_NWCareerMatch_swiftuiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FB3542273F0E8000E12EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7F948A5451400C6E514C56 /* Pods_NWCareerMatch_swiftui_NWCareerMatch_swiftuiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7070C7812F8F38A96BE30291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F7D5ED932DAA91734E35690 /* Pods_NWCareerMatch_swiftui.framework */,
+				7D8490FC0D512942F9D43E11 /* Pods_NWCareerMatch_swiftui_NWCareerMatch_swiftuiUITests.framework */,
+				BDDA1B6D96DFD378A09686A7 /* Pods_NWCareerMatch_swiftuiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E542BD9E2253571EBED7C3D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28DB51C4678498F96103BD1D /* Pods-NWCareerMatch_swiftui.debug.xcconfig */,
+				1634B97CA5DD3CE60A5D5F06 /* Pods-NWCareerMatch_swiftui.release.xcconfig */,
+				A88937B44B8A2AFC0BEB9B4D /* Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests.debug.xcconfig */,
+				83CB1D55BE64C73474E33E32 /* Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests.release.xcconfig */,
+				65F1C38DE4D503B45C4D27CD /* Pods-NWCareerMatch_swiftuiTests.debug.xcconfig */,
+				6C3C16C97DC36A3C9233C355 /* Pods-NWCareerMatch_swiftuiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8FB3522273F0E7F00E12EA8 = {
+			isa = PBXGroup;
+			children = (
+				E8FB352D273F0E7F00E12EA8 /* NWCareerMatch_swiftui */,
+				E8FB353E273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests */,
+				E8FB3548273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests */,
+				E8FB352C273F0E7F00E12EA8 /* Products */,
+				E542BD9E2253571EBED7C3D3 /* Pods */,
+				7070C7812F8F38A96BE30291 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8FB352C273F0E7F00E12EA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8FB352B273F0E7F00E12EA8 /* NWCareerMatch_swiftui.app */,
+				E8FB353B273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests.xctest */,
+				E8FB3545273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8FB352D273F0E7F00E12EA8 /* NWCareerMatch_swiftui */ = {
+			isa = PBXGroup;
+			children = (
+				E8FB3532273F0E8000E12EA8 /* Assets.xcassets */,
+				E8FB352E273F0E7F00E12EA8 /* NWCareerMatch_swiftuiApp.swift */,
+				E882B437280BCE400055B316 /* LaunchView.swift */,
+				E83F8B97274432950000B48F /* client_812979920679-evmmepcsjp2jf8ml9991j6rl2kbke1qr.apps.googleusercontent.com.plist */,
+				E8FB3530273F0E7F00E12EA8 /* ContentView.swift */,
+				E8B8261C281C7B10001D8A93 /* InfoView.swift */,
+				E86B970D288D152C0046BBCA /* KeyboardGuardian.swift */,
+				E86B9706288BB5800046BBCA /* SupportMail.swift */,
+				E8FB3558273F0F0E00E12EA8 /* TableViewCell.swift */,
+				E88573AB27EE5B29009D497D /* VolunteerViewCell.swift */,
+				E8FB355A27402AA800E12EA8 /* Career.swift */,
+				E8FB355E27402D0E00E12EA8 /* Filter.swift */,
+				E8A607CB27E9237B006A00F6 /* FilterVol.swift */,
+				E8FB355C27402BF500E12EA8 /* TableView.swift */,
+				E88573A927EE59F4009D497D /* VolTableView.swift */,
+				E844636627DD9B6900C83DA0 /* Volunteer.swift */,
+				E8C72A1527431327008B4914 /* ModelData.swift */,
+				E844636827DD9CA200C83DA0 /* VolunteerData.swift */,
+				E89DF43C27A781F60035CB90 /* JobBoardRow.swift */,
+				E8DF0C3F27E03FC20059174A /* VolunteerBoardRow.swift */,
+				E89DF43A27A76C480035CB90 /* JobDetail.swift */,
+				E824288627E590A1004D5983 /* VolunteerDetail.swift */,
+				E8FB3534273F0E8000E12EA8 /* Preview Content */,
+			);
+			path = NWCareerMatch_swiftui;
+			sourceTree = "<group>";
+		};
+		E8FB3534273F0E8000E12EA8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E8FB3535273F0E8000E12EA8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8FB353E273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8FB353F273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests.swift */,
+			);
+			path = NWCareerMatch_swiftuiTests;
+			sourceTree = "<group>";
+		};
+		E8FB3548273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8FB3549273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests.swift */,
+				E8FB354B273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITestsLaunchTests.swift */,
+			);
+			path = NWCareerMatch_swiftuiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8FB352A273F0E7F00E12EA8 /* NWCareerMatch_swiftui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8FB354F273F0E8000E12EA8 /* Build configuration list for PBXNativeTarget "NWCareerMatch_swiftui" */;
+			buildPhases = (
+				C8F45A3DC8B2AA367B83EC68 /* [CP] Check Pods Manifest.lock */,
+				E8FB3527273F0E7F00E12EA8 /* Sources */,
+				E8FB3528273F0E7F00E12EA8 /* Frameworks */,
+				E8FB3529273F0E7F00E12EA8 /* Resources */,
+				375394113E5AA33AB851F412 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NWCareerMatch_swiftui;
+			packageProductDependencies = (
+				E85B44AC274369B1006DA0F7 /* SwiftCSV */,
+			);
+			productName = NWCareerMatch_swiftui;
+			productReference = E8FB352B273F0E7F00E12EA8 /* NWCareerMatch_swiftui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8FB353A273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8FB3552273F0E8000E12EA8 /* Build configuration list for PBXNativeTarget "NWCareerMatch_swiftuiTests" */;
+			buildPhases = (
+				90D317C55E2450ED3EC707A0 /* [CP] Check Pods Manifest.lock */,
+				E8FB3537273F0E8000E12EA8 /* Sources */,
+				E8FB3538273F0E8000E12EA8 /* Frameworks */,
+				E8FB3539273F0E8000E12EA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8FB353D273F0E8000E12EA8 /* PBXTargetDependency */,
+			);
+			name = NWCareerMatch_swiftuiTests;
+			productName = NWCareerMatch_swiftuiTests;
+			productReference = E8FB353B273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8FB3544273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8FB3555273F0E8000E12EA8 /* Build configuration list for PBXNativeTarget "NWCareerMatch_swiftuiUITests" */;
+			buildPhases = (
+				F853D931C95ED8DC53C7EB84 /* [CP] Check Pods Manifest.lock */,
+				E8FB3541273F0E8000E12EA8 /* Sources */,
+				E8FB3542273F0E8000E12EA8 /* Frameworks */,
+				E8FB3543273F0E8000E12EA8 /* Resources */,
+				1E33620FBECAB57E60E5A0C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8FB3547273F0E8000E12EA8 /* PBXTargetDependency */,
+			);
+			name = NWCareerMatch_swiftuiUITests;
+			productName = NWCareerMatch_swiftuiUITests;
+			productReference = E8FB3545273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8FB3523273F0E7F00E12EA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					E8FB352A273F0E7F00E12EA8 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					E8FB353A273F0E8000E12EA8 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E8FB352A273F0E7F00E12EA8;
+					};
+					E8FB3544273F0E8000E12EA8 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E8FB352A273F0E7F00E12EA8;
+					};
+				};
+			};
+			buildConfigurationList = E8FB3526273F0E7F00E12EA8 /* Build configuration list for PBXProject "NWCareerMatch_swiftui" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8FB3522273F0E7F00E12EA8;
+			packageReferences = (
+				E85B44AB274369B1006DA0F7 /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
+			productRefGroup = E8FB352C273F0E7F00E12EA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8FB352A273F0E7F00E12EA8 /* NWCareerMatch_swiftui */,
+				E8FB353A273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests */,
+				E8FB3544273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8FB3529273F0E7F00E12EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83F8B98274432950000B48F /* client_812979920679-evmmepcsjp2jf8ml9991j6rl2kbke1qr.apps.googleusercontent.com.plist in Resources */,
+				E8FB3536273F0E8000E12EA8 /* Preview Assets.xcassets in Resources */,
+				E8FB3533273F0E8000E12EA8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FB3539273F0E8000E12EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FB3543273F0E8000E12EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E33620FBECAB57E60E5A0C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		375394113E5AA33AB851F412 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NWCareerMatch_swiftui/Pods-NWCareerMatch_swiftui-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NWCareerMatch_swiftui/Pods-NWCareerMatch_swiftui-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NWCareerMatch_swiftui/Pods-NWCareerMatch_swiftui-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90D317C55E2450ED3EC707A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NWCareerMatch_swiftuiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8F45A3DC8B2AA367B83EC68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NWCareerMatch_swiftui-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F853D931C95ED8DC53C7EB84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8FB3527273F0E7F00E12EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E844636927DD9CA200C83DA0 /* VolunteerData.swift in Sources */,
+				E86B970E288D152C0046BBCA /* KeyboardGuardian.swift in Sources */,
+				E88573AC27EE5B29009D497D /* VolunteerViewCell.swift in Sources */,
+				E89DF43D27A781F60035CB90 /* JobBoardRow.swift in Sources */,
+				E89DF43B27A76C480035CB90 /* JobDetail.swift in Sources */,
+				E844636727DD9B6900C83DA0 /* Volunteer.swift in Sources */,
+				E882B438280BCE400055B316 /* LaunchView.swift in Sources */,
+				E8FB3559273F0F0E00E12EA8 /* TableViewCell.swift in Sources */,
+				E8FB355F27402D0E00E12EA8 /* Filter.swift in Sources */,
+				E88573AA27EE59F4009D497D /* VolTableView.swift in Sources */,
+				E8FB355D27402BF500E12EA8 /* TableView.swift in Sources */,
+				E8A607CC27E9237B006A00F6 /* FilterVol.swift in Sources */,
+				E8FB3531273F0E7F00E12EA8 /* ContentView.swift in Sources */,
+				E8DF0C4027E03FC20059174A /* VolunteerBoardRow.swift in Sources */,
+				E8FB355B27402AA800E12EA8 /* Career.swift in Sources */,
+				E8FB352F273F0E7F00E12EA8 /* NWCareerMatch_swiftuiApp.swift in Sources */,
+				E86B9707288BB5800046BBCA /* SupportMail.swift in Sources */,
+				E8C72A1627431327008B4914 /* ModelData.swift in Sources */,
+				E8B8261D281C7B10001D8A93 /* InfoView.swift in Sources */,
+				E824288727E590A1004D5983 /* VolunteerDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FB3537273F0E8000E12EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8FB3540273F0E8000E12EA8 /* NWCareerMatch_swiftuiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FB3541273F0E8000E12EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8FB354A273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITests.swift in Sources */,
+				E8FB354C273F0E8000E12EA8 /* NWCareerMatch_swiftuiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8FB353D273F0E8000E12EA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8FB352A273F0E7F00E12EA8 /* NWCareerMatch_swiftui */;
+			targetProxy = E8FB353C273F0E8000E12EA8 /* PBXContainerItemProxy */;
+		};
+		E8FB3547273F0E8000E12EA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8FB352A273F0E7F00E12EA8 /* NWCareerMatch_swiftui */;
+			targetProxy = E8FB3546273F0E8000E12EA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E8FB354D273F0E8000E12EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8FB354E273F0E8000E12EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8FB3550273F0E8000E12EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DB51C4678498F96103BD1D /* Pods-NWCareerMatch_swiftui.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NWCareerMatch_swiftui/Preview Content\"";
+				DEVELOPMENT_TEAM = TBD68P8G8G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NWCareerMatch-swiftui-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "D219 CareerMatch";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NWCareerMatch-swiftui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8FB3551273F0E8000E12EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1634B97CA5DD3CE60A5D5F06 /* Pods-NWCareerMatch_swiftui.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NWCareerMatch_swiftui/Preview Content\"";
+				DEVELOPMENT_TEAM = TBD68P8G8G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NWCareerMatch-swiftui-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "D219 CareerMatch";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NWCareerMatch-swiftui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8FB3553273F0E8000E12EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F1C38DE4D503B45C4D27CD /* Pods-NWCareerMatch_swiftuiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBD68P8G8G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ria-Patel.NWCareerMatch-swiftuiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NWCareerMatch_swiftui.app/NWCareerMatch_swiftui";
+			};
+			name = Debug;
+		};
+		E8FB3554273F0E8000E12EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3C16C97DC36A3C9233C355 /* Pods-NWCareerMatch_swiftuiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBD68P8G8G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ria-Patel.NWCareerMatch-swiftuiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NWCareerMatch_swiftui.app/NWCareerMatch_swiftui";
+			};
+			name = Release;
+		};
+		E8FB3556273F0E8000E12EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88937B44B8A2AFC0BEB9B4D /* Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBD68P8G8G;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ria-Patel.NWCareerMatch-swiftuiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NWCareerMatch_swiftui;
+			};
+			name = Debug;
+		};
+		E8FB3557273F0E8000E12EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83CB1D55BE64C73474E33E32 /* Pods-NWCareerMatch_swiftui-NWCareerMatch_swiftuiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBD68P8G8G;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ria-Patel.NWCareerMatch-swiftuiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NWCareerMatch_swiftui;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8FB3526273F0E7F00E12EA8 /* Build configuration list for PBXProject "NWCareerMatch_swiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8FB354D273F0E8000E12EA8 /* Debug */,
+				E8FB354E273F0E8000E12EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8FB354F273F0E8000E12EA8 /* Build configuration list for PBXNativeTarget "NWCareerMatch_swiftui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8FB3550273F0E8000E12EA8 /* Debug */,
+				E8FB3551273F0E8000E12EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8FB3552273F0E8000E12EA8 /* Build configuration list for PBXNativeTarget "NWCareerMatch_swiftuiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8FB3553273F0E8000E12EA8 /* Debug */,
+				E8FB3554273F0E8000E12EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8FB3555273F0E8000E12EA8 /* Build configuration list for PBXNativeTarget "NWCareerMatch_swiftuiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8FB3556273F0E8000E12EA8 /* Debug */,
+				E8FB3557273F0E8000E12EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E85B44AB274369B1006DA0F7 /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E85B44AC274369B1006DA0F7 /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E85B44AB274369B1006DA0F7 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E8FB3523273F0E7F00E12EA8 /* Project object */;
+}
